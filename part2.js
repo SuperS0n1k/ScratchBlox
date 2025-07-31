@@ -3,7 +3,7 @@ document.querySelector('.stage-header_stage-menu-wrapper_oLSb9').innerHTML = "" 
 let stage = document.querySelector('.stage-wrapper_stage-canvas-wrapper_C8yio .stage_stage-wrapper_fu9p- .stage_stage_yEvd4');
 console.log("Stage element:", stage);
 
-const socket = io("https://uuznsx.tunnel.pyjam.as");
+const socket = io("https://"+input("Input Server Id")+".tunnel.pyjam.as");
 socket.on("image", (data) => {
     console.log("Server sent image URL.");
 
